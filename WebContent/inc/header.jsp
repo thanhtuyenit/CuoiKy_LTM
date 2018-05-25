@@ -8,13 +8,13 @@
 		</div>
 	</div>
 
-	<a href="index.html" class="logo">Thanh <span class="lite">Tuyền</span></a>
+	<a href="<%=request.getContextPath()%>/trang-chu" class="logo">Thanh <span class="lite">Tuyền</span></a>
 
 	<div class="nav search-row" id="top_menu">
 		<ul class="nav top-menu">
 			<li>
-				<form class="navbar-form">
-					<input class="form-control" placeholder="Search" type="text">
+				<form class="navbar-form" action="<%=request.getContextPath()%>/trang-chu" method="post">
+					<input class="form-control" name="keyword" placeholder="Search" type="text">
 				</form>
 			</li>
 		</ul>
@@ -34,7 +34,7 @@
 							class="icon_profile"></i> Thông tin cá nhân</a></li>
 					<li><a href="#"><i class="icon_mail_alt"></i> Đổi mật khẩu</a>
 					</li>
-					<li><a href="login.html"><i class="icon_key_alt"></i> Đăng
+					<li><a href="/logout"><i class="icon_key_alt"></i> Đăng
 							xuất</a></li>
 				</ul></li>
 		</ul>

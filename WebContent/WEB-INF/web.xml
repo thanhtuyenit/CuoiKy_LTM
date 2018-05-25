@@ -16,7 +16,6 @@
 		<error-code>404</error-code>
 		<location>/loi-khong-tim-thay-trang</location>
 	</error-page>
-
 	<servlet>
 		<servlet-name>ShowError404Controller</servlet-name>
 		<servlet-class>controller.ShowError404Controller</servlet-class>
@@ -25,7 +24,6 @@
 		<servlet-name>ShowError404Controller</servlet-name>
 		<url-pattern>/loi-khong-tim-thay-trang</url-pattern>
 	</servlet-mapping>
-
 	<servlet>
 		<servlet-name>IndexController</servlet-name>
 		<servlet-class>controller.IndexController</servlet-class>
@@ -34,7 +32,6 @@
 		<servlet-name>IndexController</servlet-name>
 		<url-pattern>/trang-chu</url-pattern>
 	</servlet-mapping>
-
 	<servlet>
 		<servlet-name>ShowLoginController</servlet-name>
 		<servlet-class>controller.ShowLoginController</servlet-class>
@@ -43,23 +40,68 @@
 		<servlet-name>ShowLoginController</servlet-name>
 		<url-pattern>/dang-nhap</url-pattern>
 	</servlet-mapping>
-
 	<servlet>
-		<servlet-name>ShowAddUserController</servlet-name>
-		<servlet-class>controller.ShowAddUserController</servlet-class>
+		<servlet-name>ShowAddVacxinController</servlet-name>
+		<servlet-class>controller.ShowAddVacxinController</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>ShowAddUserController</servlet-name>
-		<url-pattern>/them-nguoi-dung</url-pattern>
+		<servlet-name>ShowAddVacxinController</servlet-name>
+		<url-pattern>/them-vacxin</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ShowEditVacxinController</servlet-name>
+		<servlet-class>controller.ShowEditVacxinController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowEditVacxinController</servlet-name>
+		<url-pattern>/chinh-sua-vacxin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>controller.LoginController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/xulylogin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LogoutController</servlet-name>
+		<servlet-class>controller.LogoutController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutController</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>XuLyChinhSuaController</servlet-name>
+		<servlet-class>controller.XuLyChinhSuaController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>XuLyChinhSuaController</servlet-name>
+		<url-pattern>/xu-ly-chinh-sua</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>XuLyChinhThemController</servlet-name>
+		<servlet-class>controller.XuLyChinhThemController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>XuLyChinhThemController</servlet-name>
+		<url-pattern>/xu-ly-them</url-pattern>
 	</servlet-mapping>
 	
 		<servlet>
-		<servlet-name>ShowEditUserController</servlet-name>
-		<servlet-class>controller.ShowEditUserController</servlet-class>
+		<servlet-name>ThongKeController</servlet-name>
+		<servlet-class>controller.ThongKeController</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>ShowEditUserController</servlet-name>
-		<url-pattern>/chinh-sua-nguoi-dung</url-pattern>
+		<servlet-name>ThongKeController</servlet-name>
+		<url-pattern>/thong-ke</url-pattern>
 	</servlet-mapping>
+
+
 
 </web-app>

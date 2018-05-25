@@ -19,7 +19,7 @@
     <p class="text-404">404</p>
 
     <p>Trang bạn yêu cầu không tìm thấy! </p>
-	<a href="index.html">Về Trang chủ</a>
+	<a href="trang-chu">Về Trang chủ</a>
   </div>
      <div class="text-right">
       <div class="credits">

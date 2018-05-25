@@ -1,6 +1,8 @@
+<%@page import="model.bean.Vacxin"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<%@ include file="../inc/checkLogin.jsp"%>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -25,7 +27,7 @@
       <section class="wrapper">
         <div class="row">
           <div class="col-lg-12">
-            <h3 class="page-header"><i class="fa fa-files-o"></i> Thêm người dùng</h3>
+            <h3 class="page-header"><i class="fa fa-files-o"></i>Chỉnh sửa vacxin</h3>
           </div>
         </div>
         <!-- Form validations -->
@@ -34,48 +36,42 @@
             <section class="panel">
               <div class="panel-body">
                 <div class="form">
-                  <form class="form-validate form-horizontal " id="register_form" method="get" action="">
+                  <form class="form-validate form-horizontal " id="register_form" method="post" action="<%=request.getContextPath()%>/xu-ly-them">
                     <div class="form-group ">
-                      <label for="fullname" class="control-label col-lg-2">Full name <span class="required">*</span></label>
+                      <label for="address" class="control-label col-lg-2">Tên vacxin <span class="required">*</span></label>
                       <div class="col-lg-10">
-                        <input class=" form-control" id="fullname" name="fullname" type="text" />
+                        <input class=" form-control" id="tenVacxin" name="tenVacxin" type="text" required="required" />
                       </div>
                     </div>
                     <div class="form-group ">
-                      <label for="address" class="control-label col-lg-2">Address <span class="required">*</span></label>
+                      <label for="username" class="control-label col-lg-2">Số mũi <span class="required">*</span></label>
                       <div class="col-lg-10">
-                        <input class=" form-control" id="address" name="address" type="text" />
+                        <input  class="form-control " id="soMui" name="soMui" type="number" required="required" />
                       </div>
                     </div>
                     <div class="form-group ">
-                      <label for="username" class="control-label col-lg-2">Username <span class="required">*</span></label>
+                      <label for="password" class="control-label col-lg-2">Mô tả <span class="required">*</span></label>
                       <div class="col-lg-10">
-                        <input class="form-control " id="username" name="username" type="text" />
+                        <input  class="form-control " id="moTa" name="moTa" type="text" />
                       </div>
                     </div>
                     <div class="form-group ">
-                      <label for="password" class="control-label col-lg-2">Password <span class="required">*</span></label>
+                      <label for="confirm_password" class="control-label col-lg-2">Gía vacxin <span class="required">*</span></label>
                       <div class="col-lg-10">
-                        <input class="form-control " id="password" name="password" type="password" />
+                        <input class="form-control " id="giaVacxin" name="giaVacxin" type="number" />
                       </div>
                     </div>
                     <div class="form-group ">
-                      <label for="confirm_password" class="control-label col-lg-2">Confirm Password <span class="required">*</span></label>
+                      <label for="email" class="control-label col-lg-2">Tên hãng <span class="required">*</span></label>
                       <div class="col-lg-10">
-                        <input class="form-control " id="confirm_password" name="confirm_password" type="password" />
-                      </div>
-                    </div>
-                    <div class="form-group ">
-                      <label for="email" class="control-label col-lg-2">Email <span class="required">*</span></label>
-                      <div class="col-lg-10">
-                        <input class="form-control " id="email" name="email" type="email" />
+                        <input  class="form-control " id="tenHang" name="tenHang" type="text" required="required"/>
                       </div>
                     </div>
                     
                     <div class="form-group">
                       <div class="col-lg-offset-2 col-lg-10">
-                        <button class="btn btn-primary" type="submit">Save</button>
-                        <button class="btn btn-default" type="button">Cancel</button>
+                        <button class="btn btn-primary" type="submit">Them</button>
+                        <button class="btn btn-default" type="button">Hủy</button>
                       </div>
                     </div>
                   </form>
@@ -95,7 +91,7 @@
   <script src="<%=request.getContextPath()%>/js/jquery.nicescroll.js" type="text/javascript"></script>
   <script type="text/javascript" src="<%=request.getContextPath()%>/js/jquery.validate.min.js"></script>
 
-  <script src="<%=request.getContextPath()%>/js/form-validation-script.js"></script>
+  <%-- <script src="<%=request.getContextPath()%>/js/form-validation-script.js"></script> --%>
   <script src="<%=request.getContextPath()%>/js/scripts.js"></script>
 
 
